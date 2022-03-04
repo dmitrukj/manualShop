@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+  .nav_left a {
+    margin-right: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $c-green;
+  }
+  .nav_right {
+    @extend .nav_left;
+  }
+  .item_1 {
+    width: 172px;
+    height: 34px;
+  }
+  .item_2 {
+    width: 18px;
+    height: 18px;
+  }
+}
