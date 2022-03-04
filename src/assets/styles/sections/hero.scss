@@ -1,0 +1,27 @@
+.hero_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  .wrapper_item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px;
+    }
+  }
+}
+@media screen and (max-width: 475px) {
+  .hero_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      display: none;
+    }
+  }
+}
