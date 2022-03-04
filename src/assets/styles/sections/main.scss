@@ -57,3 +57,14 @@
     }
   }
 }
+@media screen and (max-width: 550px) {
+  .main_wrap .title,
+  .subtitle {
+    width: 70vw;
+    font-size: 1rem;
+  }
+  .main_wrap .btn_1,
+  .btn_2 {
+    width: 70vw;
+  }
+}
