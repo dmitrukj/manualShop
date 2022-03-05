@@ -1,0 +1,117 @@
+.medical.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid $c-gray;
+  background: $c-gray;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  .medical_left {
+    margin-left: 40px;
+    h1 {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 60px;
+      letter-spacing: 1.2px;
+      color: $c-green;
+      margin-top: 160px;
+      margin-bottom: 28px;
+    }
+    p {
+      width: 560px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 29px;
+      color: $c-green;
+      margin-bottom: 38px;
+    }
+    button {
+      margin-bottom: 30px;
+      width: 320px;
+      height: 50px;
+      background: $c-burgundy;
+      border: 2px solid $c-burgundy;
+      box-sizing: border-box;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+      color: $c-white;
+    }
+    .medical_left_plan {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      span {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 29px;
+        color: $c-green;
+      }
+      span::before {
+        content: "♥";
+      }
+    }
+  }
+  .medical_right {
+    margin: 40px 40px 40px 0;
+    .medical_items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .medical_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid $c-white;
+        background: $c-white;
+        padding: 35px 60px;
+        margin: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1220px) {
+  .medical.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .medical_left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+    .medical.container {
+      .medical_left {
+        p,
+        button {
+          width: 80vw;
+        }
+        .medical_left_plan {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+      .medical_right {
+        .medical_items {
+          width: 80vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .medical_card {
+            margin-left: 75px;
+          }
+        }
+      }
+    }
+  }
+}
