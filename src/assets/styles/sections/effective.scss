@@ -1,0 +1,115 @@
+.effective {
+  margin-top: 40px;
+  .effective_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 32px;
+      text-align: center;
+      color: $c-green;
+    }
+    span {
+      @extend p;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    img {
+      width: 96px;
+      height: 96px;
+    }
+  }
+  .effective_reiting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    img {
+      margin-top: 70px;
+      margin-bottom: 18px;
+      margin-right: 10px;
+      width: 160px;
+      height: 30px;
+    }
+  }
+  span {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 65px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    color: $c-green;
+  }
+  .bxslider {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1px solid $c-gray;
+      background: $c-gray;
+      margin-left: 10px;
+      margin-bottom: 120px;
+      img {
+        margin-top: 130px;
+        margin-bottom: 54px;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 45px;
+        text-align: center;
+        letter-spacing: 0.84px;
+        color: $c-green;
+        margin-bottom: 137px;
+        width: 400px;
+      }
+      span {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 30px;
+        text-align: center;
+        color: $c-green;
+        margin-bottom: 140px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1765px) {
+  .effective {
+    .bxslider {
+      div {
+        width: 80vw;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1235px) {
+  .effective {
+    .bxslider {
+      div {
+        p {
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .effective {
+    .bxslider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
